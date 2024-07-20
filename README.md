@@ -1,6 +1,6 @@
 # NewsAI Agent
 
-![Project Logo](link-to-your-logo.png)
+![Project Logo](img.jpeg)
 
 > An intelligent NewsAI agent that searches the internet and generates insightful blog content.
 
