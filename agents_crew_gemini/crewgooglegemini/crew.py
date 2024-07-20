@@ -6,15 +6,19 @@ from agents import news_researcher,news_writer
 crew=Crew(
     agents=[news_researcher,news_writer],
     tasks=[research_task,write_task],
-    process=Process.sequential
+    process=Process.sequential,
+    max_rpm=20
 )
 
-
+def call_llm(input):
 ## starting the task execution process with enhanced feedback
 
-result=crew.kickoff(inputs={'topic':"AI in healthcare"})
+    result=crew.kickoff(inputs={'topic':input})
 
-print(result)
+    print("result -------------------------------------------")
+    print(result) 
+    print("result -------------------------------------------")
+    return result
 
 
 

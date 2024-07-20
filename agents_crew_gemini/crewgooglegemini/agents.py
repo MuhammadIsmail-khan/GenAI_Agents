@@ -24,6 +24,7 @@ news_researcher=Agent(
     ),
     tools=[tool],
     llm=llm,
+    max_iter=5,
     allow_delegation=True
 )
 # creating a write agent with custom tools responsible in writing news blog
@@ -39,6 +40,7 @@ news_writer=Agent(
     ),
     tools=[tool],
     llm=llm,
+    max_iter=5,
     allow_delegation=True
 )
 
